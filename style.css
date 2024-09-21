@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --color-one: rgb(90, 90, 90);
+    --color-two: rgb(252, 252, 252);
+    --color-three: rgb(41, 41, 41);
+    --color-four: rgb(20, 20, 20);
+    --roxo: #ff005e;
+    --font-p: "Inter", sans-serif;
+    --font-color: black;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    box-sizing: border-box;
+    background-color: var(--color-one);
+    color: var(--color-two);
+    font-family: var(--font-p);
+}
+
+.pai {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.filho-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(#1800094f, #1800094f), url(images/lilly1.png);
+    background-repeat: no-repeat;
+    background-size: 300vh;
+    /* background-color: var(--color-three); */
+    width: 100%;
+    height: 100vh;
+    
+}
+
+.filho-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: var(--color-four);
+    width: 900px;
+    height: 550px;
+    border: 1px transparent;
+    border-radius: 4%;
+    box-shadow: 10px 5px 20px rgba(0, 0, 0, 0.541);
+}
+
+
+/* FILHO 3*/
+
+.filho-3 {
+    font-family: var(--font-p);
+
+}
+
+.filho-3-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* margin: 0% 0% 0% 5%; */
+
+    /* background-color: var(--color-two); */
+    width: 450px;
+    height: 550px;
+
+}
+
+.filho-3-image {
+    border: 10px solid var(--roxo);
+    border-radius: 100%;
+    width: 250px;
+    height: 250px;
+    transition: .2s;
+}
+
+.filho-3-image:hover {
+    opacity: 100%;
+    transform: scale(1.05);
+}
+
+.filho-3-text {
+    color: var(--roxo);
+    font-family: var(--font-p);
+    font-size: 1.7rem;
+    text-transform: uppercase;
+    font-family: "Krona one";
+    margin: 5% 0% 0% 0%;
+    transition: .2s;
+}
+
+.filho-3-text-2 {
+    color: var(--roxo);
+    font-size: 1.5rem;
+    padding: 0% 0% 5% 0%;
+    font-family: "Montserrat";
+    font-weight: 200;
+}
+
+/* FILHO 4 */
+
+.filho-4 {
+    margin: 2% 0% 0% 0% ;
+}
+
+.filho-4-botoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    
+    /* background-color: var(--color-one); */
+    width: 450px;
+    height: 550px;
+    padding: 0% 0% 0% 0%;
+
+}
+
+.botao {
+    margin: 01%;
+}
+
+.filho-4-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.redes-image {
+    width: 200%;
+}
+
+.botao {
+    text-decoration: none;
+    color: var(--color-two);
+    border: 2px solid var(--roxo);
+    font-family: "Krona one";
+    border-radius: 5%;
+    padding: 3% 25% 3% 25%;
+    transition: .2s;
+    
+}
+
+.botao:hover {
+    background-color: var(--roxo);
+    opacity: 100%;
+    transform: scale(1.05);
+}
